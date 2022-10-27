@@ -105,7 +105,7 @@ body{
   box-shadow: 0px 10px 40px #00000056;
   outline: none;
   box-sizing: border-box;
-  cursor: pointer;
+
 }
 .textfield input:hover{
   background-color: #eeeeee75;
