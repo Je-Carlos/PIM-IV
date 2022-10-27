@@ -13,6 +13,13 @@ body{
   justify-content: center;
   align-items: center;
 }
+.register-button {
+  border: none;
+  background-color: #00A9FF;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .left-login{
   width: 50vw;
   height: 100vh;
@@ -35,6 +42,34 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.register-button {
+  display: flex;
+  align-items: center;
+}
+.register-button button {
+  border: none;
+  background-color: #00A9FF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.register-button:hover {
+  background-color: #0088cc;
+}
+.register-button a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+.card-login h1::after{
+  content: '';
+  display: block;
+  width: 3.5rem;
+  height: 0.2rem;
+  background-color: #00A9FF;
+  margin:0 auto;
+  position: absolute;
+  border-radius: 10px;
 }
 
 .card-login{
@@ -66,11 +101,11 @@ body{
   border: none;
   border-radius: 10px;
   padding: 10px 15px;
-  background: #eeeeee75;
   color: #000000c0;
   box-shadow: 0px 10px 40px #00000056;
   outline: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .textfield input:hover{
   background-color: #eeeeee75;
@@ -95,4 +130,7 @@ body{
   color: #fff;
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00000056;
+}
+.button-login:hover{
+  background-color: #0088cc;
 }
