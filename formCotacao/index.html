@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Cote conosco!</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Informações do veículo</h3>
+            <div class="inputBox dropdown">
+              <span>Fabricante</span>
+              <select name="fabricante" id="fabricante" required>
+                <option value="0" disabled selected>Fabricante</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Chevrolet</option>
+                <option value="4">Citroen</option>
+                <option value="5">Fiat</option>
+                <option value="6">Ford</option>
+                <option value="7">Honda</option>
+                <option value="8">Hyundai</option>
+                <option value="9">Jaguar</option>
+                <option value="10">Jeep</option>
+                <option value="11">Mercedes-Benz</option>
+                <option value="12">Mitsubishi</option>
+                <option value="13">Nissan</option>
+                <option value="14">Peugeot</option>
+              </select>
+            </div>
+            <div class="inputBox dropdown">
+              <span>Ano do Modelo</span>
+              <select name="ano" id="ano" required>
+                <option value="0" disabled selected>Ano</option>
+                <option value="1">2010</option>
+                <option value="2">2011</option>
+                <option value="3">2012</option>
+                <option value="4">2013</option>
+                <option value="5">2014</option>
+                <option value="6">2015</option>
+                <option value="7">2016</option>
+                <option value="8">2017</option>
+                <option value="9">2018</option>
+                <option value="10">2019</option>
+                <option value="11">2020</option>
+                <option value="12">2021</option>
+              </select>
+            </div>
+            <div class="input-group">
+            <div class="inputBox inputInfo">
+              <span>Seu veículo é 0km?</span>
+              <input type="radio" name="carroZero" id="sim" /> Sim
+              <input type="radio" name="carroZero" id="nao" /> Não
+            </div>
+            <div class="inputBox inputInfo">
+              <span>Você usa o veículo para trabalho?</span>
+              <input type="radio" name="usaTrabalho" id="sim" /> Sim
+              <input type="radio" name="usaTrabalho" id="nao" /> Não
+            </div>
+          </div>
+          </div>
+          <div class="col">
+            <h3 class="title">Informações do Cliente</h3>
+            <div class="inputBox nome">
+              <span>Nome Completo</span>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                required
+                placeholder="Nome e Sobrenome" />
+            </div>
+
+            <div class="inputBox estado">
+              <span>Estado</span>
+              <input
+                type="estado"
+                name="estado"
+                id="estado"
+                placeholder="Estado"
+                required />
+            </div>
+            <div class="inputBox cidade">
+              <span>Cidade</span>
+              <input
+                type="cidade"
+                name="cidade"
+                id="cidade"
+                placeholder="Cidade"
+                required />
+            </div>
+            <div class="inputBox estado">
+              <span>Estado</span>
+              <input
+                type="estado"
+                name="estado"
+                id="estado"
+                placeholder="Estado"
+                required />
+            </div>
+          </div>
+        </div>
+        <input type="submit" class="submit-btn" value="Finalizar Cotação" />
+      </form>
+    </div>
+  </body>
+</html>
