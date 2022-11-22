@@ -1,11 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
 
-body{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
 }
-.main-login{
+/* HEADER */
+.container {
+  background: #00a9ff;
+  color: #000000c0;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9px;
+  transition: all 0.5s ease;
+}
+
+.logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+}
+.navbar a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.navbar a:hover {
+  color: #000000c0;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+}
+.main-header a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.main-header a:hover {
+  color: #000000c0;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user img {
+  font-size: 28px;
+  margin-right: 10px;
+}
+/* MAIN */
+.main-login {
   width: 100vw;
   height: 100vh;
   background: #7bd2fd;
@@ -15,12 +80,12 @@ body{
 }
 .register-button {
   border: none;
-  background-color: #00A9FF;
+  background-color: #00a9ff;
   padding: 0.4rem 1rem;
   border-radius: 5px;
   cursor: pointer;
 }
-.left-login{
+.left-login {
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -28,15 +93,14 @@ body{
   align-items: center;
   flex-direction: column;
 }
-.left-login h1{
+.left-login h1 {
   font-size: 3vw;
   color: #000000c0;
 }
-.left-login-image{
+.left-login-image {
   width: 30vw;
-  
 }
-.right-login{
+.right-login {
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -49,30 +113,30 @@ body{
 }
 .register-button button {
   border: none;
-  background-color: #00A9FF;
+  background-color: #00a9ff;
   border-radius: 5px;
   cursor: pointer;
 }
 .register-button:hover {
   background-color: #0088cc;
 }
-.register-button a{
+.register-button a {
   text-decoration: none;
   font-weight: 700;
   color: #fff;
 }
-.card-login h1::after{
-  content: '';
+.card-login h1::after {
+  content: "";
   display: block;
   width: 3.5rem;
   height: 0.2rem;
-  background-color: #00A9FF;
-  margin:0 auto;
+  background-color: #00a9ff;
+  margin: 0 auto;
   position: absolute;
   border-radius: 10px;
 }
 
-.card-login{
+.card-login {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -88,7 +152,7 @@ body{
   font-weight: 700;
   margin: 0;
 }
-.textfield{
+.textfield {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -96,7 +160,7 @@ body{
   justify-content: center;
 }
 
-.textfield input{
+.textfield input {
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -105,18 +169,17 @@ body{
   box-shadow: 0px 10px 40px #00000056;
   outline: none;
   box-sizing: border-box;
-
 }
-.textfield input:hover{
+.textfield input:hover {
   background-color: #eeeeee75;
 }
-.textfield label{
+.textfield label {
   color: #000000c0;
   font-weight: 700;
   margin: 10px 0;
 }
 
-.button-login{
+.button-login {
   width: 100%;
   padding: 16px 0px;
   margin: 25px;
@@ -126,325 +189,30 @@ body{
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  background-color: #00A9FF;
+  background-color: #00a9ff;
   color: #fff;
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00000056;
 }
-.button-login:hover{
+.button-login:hover {
   background-color: #0088cc;
 }
-
-footer{
-  bottom: 0px;
-  width: 100%;
-  background: #005580;
-}
-.main-content{
-  display: flex;
-}
-.main-content .box{
-  flex-basis: 50%;
-  padding: 10px 20px;
-}
-.box h2{
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.box .content{
-  margin: 20px 0 0 0;
-  position: relative;
-}
-.box .content:after{
-  position: absolute;
-  content: '';
-  width: 15%;
-  height: 2px;
-  background: #fff;
-  top: -10px;
-}
-.box .content:before{
-  position: absolute;
-  content: '';
-  height: 2px;
-  width: 100%;
-  background: #1a1a1a;
-  top: -10px;
-}
-
-.left .content p{
-  text-align: justify;
-}
-.center .content .fas{
-  font-size: 23px;
-  background: #1a1a1a;
-  width: 45px;
-  height: 45px ;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.center .content .fas:hover{
-  background: #fff;
-}
-.center .content .text{
-  font-size: 17px;
-  font-weight: 500;
-  padding-left: 10px;
-}
-.center .content .phone{
-  margin: 10px 0;
-}
-.center .content .msg{
-  margin-top: 10px;
-}
-.right form input, .right form textarea{
-  width: 100%;
-  font-size: 17px;
-  background: #fff;
-  padding-left: 10px;
-  border: 1px solid #fff;
-}
-.right form input{
-  height: 35px;
-}
-.right form input:focus,
-.right form textarea:focus{
-  outline-color: #005580;
-}
-.right form .text{
-  font-size: 17px;
-  margin-bottom: 2px;
-  color: #000;
-}
-.right form .btn{
-  margin-top: 10px;
-}
-.right form .btn button{
-  height: 40px;
-  width: 100%;
-  background: #005580;
-  font-size: 17px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: .3s;
-}
-.right form .btn button:hover{
-  background: #000;
-}
-.bottom .center{
-  padding: 5px;
-  font-size: 15px;
-  background: #fff;
-  text-align: center;
-}
-.bottom .center span{
-  color: #000;
-  font-weight: bold;
-  
-}
-.bottom .center a{
-  color: #005580;
-  text-decoration: none;
-  font-weight: bold;
-}
-.bottom .center a:hover{
-  text-decoration: underline;
-}
-@media screen and (max-width: 900px){
-
-  footer{
-      bottom: 0px;
+@media screen and (max-width: 900px) {
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .main-content{
-      flex-wrap: wrap;
-      flex-direction: column;
-  }
-  .main-content .box{
-      margin: 5px 0;
+  .main-content .box {
+    margin: 5px 0;
   }
 }
 
-/* header */
-
-.container{
-  max-width: 1360px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-
-header{
-    background-color: #005580;
-    width: 100%;
-    padding: 20px;
-    top: 0px;
-    height: 100px;
-
-    align-items: center;
-    display: flex;
-    z-index: 10;
-}
-
-.logo,.login{
-    width: max-content;
-    
-}
-
-.menu{
-    width: max-content;
-    display: inline-flex;
-    flex-flow: row wrap;
-}
-
-.menu nav a{
-    width: auto;
-    color: #fff;
-    text-decoration: none;
-    padding-right: 50px;
-    font-size: 18px;
-}
-
-/* footer */
-
-
-footer{
-    bottom: 0px;
-    width: 100%;
-    background: #005580;
-}
-.main-content{
-    display: flex;
-}
-.main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
-}
-.box h2{
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.box .content{
-    margin: 20px 0 0 0;
-    position: relative;
-}
-.box .content:after{
-    position: absolute;
-    content: '';
-    width: 15%;
-    height: 2px;
-    background: #fff;
-    top: -10px;
-}
-.box .content:before{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: #1a1a1a;
-    top: -10px;
-}
-
-.left .content p{
-    text-align: justify;
-}
-.center .content .fas{
-    font-size: 23px;
-    background: #1a1a1a;
-    width: 45px;
-    height: 45px ;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.center .content .fas:hover{
-    background: #fff;
-}
-.center .content .text{
-    font-size: 17px;
-    font-weight: 500;
-    padding-left: 10px;
-}
-.center .content .phone{
-    margin: 10px 0;
-}
-.center .content .msg{
-    margin-top: 10px;
-}
-.right form input, .right form textarea{
-    width: 100%;
-    font-size: 17px;
-    background: #fff;
-    padding-left: 10px;
-    border: 1px solid #fff;
-}
-.right form input{
-    height: 35px;
-}
-.right form input:focus,
-.right form textarea:focus{
-    outline-color: #005580;
-}
-.right form .text{
-    font-size: 17px;
-    margin-bottom: 2px;
-    color: #000;
-}
-.right form .btn{
-    margin-top: 10px;
-}
-.right form .btn button{
-    height: 40px;
-    width: 100%;
-    background: #005580;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s;
-}
-.right form .btn button:hover{
-    background: #000;
-}
-.bottom .center{
-    padding: 5px;
-    font-size: 15px;
-    background: #fff;
-    text-align: center;
-}
-.bottom .center span{
-    color: #000;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.bottom .center a{
-    color: #005580;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.bottom .center a:hover{
-    text-decoration: underline;
-}
-@media screen and (max-width: 1080px){
-    footer{
-        bottom: 0px;
-    }
-    .main-content{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .main-content .box{
-        margin: 5px 0;
-    }
+@media screen and (max-width: 1080px) {
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+  }
 }

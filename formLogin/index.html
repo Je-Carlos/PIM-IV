@@ -4,27 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link do css -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Link dos icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <title>Login</title>
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo"><img src="assets/img/VSsecurity.png" alt="VSsecurity"></div>
-        <div class="menu">
-          <nav>
-            <a href="#">HOME</a>
-            <a href="#">COTAÇÃO</a>
-            <a href="#">DÚVIDAS</a>
-          </nav>
-        </div>
-        <div class="login">
-        <a href=""><img src="assets/img/login.png" alt="login"></a>
-        </div>
+  <header>
+    <div class="container">
+      <a href="#">
+        <!-- Link para a home -->
+        <img
+          class="logo"
+          src="assets/img/VSsecurity.png"
+          alt="Logo da VSsecurity azul e branco"
+      /></a>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <!-- Link para a home -->
+        <li><a href="#">Cotação</a></li>
+        <!-- Link para a cotação -->
+        <li><a href="#">Sobre nós</a></li>
+        <!-- Link para a sobre nós -->
+      </ul>
+      <div class="main-header">
+        <a href="#" class="user"
+          ><img src="assets/img/user-3-fill.svg" alt="" /> Login</a
+        >
+        <a href="#" class="user">
+          <img src="assets/img/user-settings-fill.svg" alt="" />Registrar</a
+        >
       </div>
-    </header>
-
+    </div>
+  </header>
+  <body>
     <div class="main-login">
       <div class="left-login">
         <h1>
@@ -34,8 +54,7 @@
         <img
           class="left-login-image"
           src="assets/img/tablet-login-animate.svg"
-          alt="Duas pessoas dando a mão fechando um negócio"
-        />
+          alt="Duas pessoas dando a mão fechando um negócio" />
       </div>
       <div class="right-login">
         <div class="card-login">
@@ -47,8 +66,7 @@
               name="usuario"
               id="usuario"
               placeholder="E-mail de login"
-              required
-            />
+              required />
           </div>
           <div class="textfield">
             <label for="senha">Senha</label>
@@ -57,69 +75,14 @@
               name="senha"
               id="senha"
               placeholder="Senha de login"
-              required
-            />
+              required />
           </div>
-          <button class="button-login"><a href="#"></a>Login</button> 
+          <button class="button-login"><a href="#"></a>Login</button>
           <!-- Link para fazer o login -->
           <button class="register-button"><a href="#">Registrar</a></button>
           <!-- Link para a página de registro -->
         </div>
       </div>
     </div>
-    <footer>
-      <div class="main-content">
-        <div class="left box">
-          <h2> Sobre nós</h2>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste facilis harum eos vel incidunt distinctio corrupti iure? Rem</p>
-          </div>
-        </div><!--left box-->
-        <div class="center box">
-          <h2>Endereço</h2>
-          <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker"></span>
-              <span class="text">Av. Carlos Consoni, 10 - Jardim Canada</span>
-              <span class="text">Ribeirão Preto - SP</span>
-            </div>
-  
-            <div class="phone">
-              <span class="fas fas fa-phone-alt"></span>
-              <span class="text">+55 16 99327-2184</span>
-            </div>
-  
-            <div class="email">
-              <span class="fas fa-envelope"></span>
-              <span class="text">VSsecurity@gmail.com.br</span>
-            </div>
-          </div>
-        </div>
-        <div class="right box">
-          <h2>Contato</h2>
-          <div class="content">
-            <form action="#">
-              <div class="email">
-                <div class="text">Email *</div>
-                <input type="email" required>
-              </div>
-              <div class="msg">
-                <div class="text">Mensagem *</div>
-                <textarea rows="2" cols="25" required></textarea>
-              </div>
-              <div class="btn">
-                <button type="submit">Enviar</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div><!--main-content-->
-      <div class="bottom">
-        <div class="center">
-          <span class="credit">Criado por <a href="#">VSsecurity</a></span>
-          <span class="far fa-copyright">2022 Todos os diteitos reservados</span>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
