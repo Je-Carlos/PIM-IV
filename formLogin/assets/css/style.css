@@ -9,7 +9,7 @@
   font-family: "Inter", sans-serif;
 }
 /* HEADER */
-.container {
+.container-header {
   background: #00a9ff;
   color: #000000c0;
   width: 100vw;
@@ -24,7 +24,7 @@
 }
 
 .logo {
-  height: 70px;
+  height: 90px;
   display: flex;
   align-items: center;
   margin-right: 3px;
