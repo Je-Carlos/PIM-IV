@@ -1,191 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<title>Registrar</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-</head>
-<body>
+  <head>
+    <title>Registrar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
 	<header>
-		<div class="container">
-			<div class="logo"><img src="assets/img/VSsecurity.png" alt="VSsecurity"></div>
-			<div class="menu">
-				<nav>
-					<a href="#">HOME</a>
-					<a href="#">COTAÇÃO</a>
-					<a href="#">DÚVIDAS</a>
-				</nav>
-			</div>
-			<div class="login">
-			<a href=""><img src="assets/img/login.png" alt="login"></a>
-			</div>
-		</div>
-	</header>
-	
-	<div class="container1">
-		<div class="form-image">
-		  <!--Imagem do menu de cadastro -->
-		  <img
-			src="assets/img/registerImage.svg"
-			alt="Uma imagem de uma moça segurando balões azuis"
-		  />
-		</div>
-		<div class="form">
-		  <form action="#">
-			<!--TODO Tag do form, precisa por pelo BE -->
-			<div class="form-header">
-			  <div class="title"><h1>Cadastre-se</h1></div>
-			  <div class="login-button">
-				<button><a href="#">Entrar</a></button>
-				<!--TODO Link do login para logar-->
-			  </div>
-			</div>
-  
-			<div class="input-group">
-			  <div class="input-box">
-				<label for="firstname">Primeiro nome</label>
-				<input
-				  id="firstname"
-				  type="text"
-				  name="firstname"
-				  placeholder="Digite seu primeiro nome"
-				  required
-				/>
-			  </div>
-			  <div class="input-box">
-				<label for="lastname">Sobrenome</label>
-				<input
-				  id="lastname"
-				  type="text"
-				  name="lastname"
-				  placeholder="Digite seu sobrenome"
-				  required
-				/>
-			  </div>
-  
-			  <div class="input-box">
-				<label for="email">E-mail</label>
-				<input
-				  id="email"
-				  type="email"
-				  name="email"
-				  placeholder="Digite seu email"
-				  required
-				/>
-			  </div>
-  
-			  <div class="input-box">
-				<label for="date">Data de Nascimento</label>
-				<input id="date" type="date" name="date" required>
-			  </div>
-  
-			  <div class="input-box">
-				<label for="password">Senha</label>
-				<input
-				  id="password"
-				  type="password"
-				  name="password"
-				  placeholder="Digite sua senha"
-				  required
-				/>
-			  </div>
-  
-			  <div class="input-box">
-				<label for="confirmpassword">Confirme sua senha</label>
-				<input
-				  id="confirmpassword"
-				  type="password"
-				  name="confirmpassword"
-				  placeholder="Digite sua senha novamente"
-				  required
-				/>
-			  </div>
-			</div>
-  
-			<div class="gender-inputs">
-			  <div class="gender-title">
-				<h6>Gênero</h6>
-			  </div>
-			  <div class="gender-group">
-				<div class="gender-input">
-				  <input type="radio" name="gender" id="female" />
-				  <label for="female">Feminino</label>
-				</div>
-  
-				<div class="gender-input">
-				  <input type="radio" name="gender" id="male" />
-				  <label for="male">Masculino</label>
-				</div>
-  
-				<div class="gender-input">
-				  <input type="radio" name="gender" id="others" />
-				  <label for="others">Prefiro não dizer</label>
-				</div>
-			  </div>
-			</div>
-			<div class="continue-button"><button><a href="#">Continuar</a></button></div>
-				<!--TODO adicionar o link para continuar-->
-			  </div>
-		  </form>
-		</div>
-	  </div>
+    <div class="container-header">
+      <a href="#">
+        <!-- Link para a home -->
+        <img
+          class="logo"
+          src="assets/img/VSsecurity.png"
+          alt="Logo da VSsecurity azul e branco"
+      /></a>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <!-- Link para a home -->
+        <li><a href="#">Cotação</a></li>
+        <!-- Link para a cotação -->
+        <li><a href="#">Dúvidas</a></li>
+        <!-- Link para as dúvidas -->
+      </ul>
+      <div class="main-header">
+        <a href="#" class="user"
+          ><img src="assets/img/user-3-fill.svg" alt="" /> Login</a
+        >
+        <a href="#" class="user">
+          <img src="assets/img/user-settings-fill.svg" alt="" />Registrar</a
+        >
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="container1">
+      <div class="form-image">
+        <!--Imagem do menu de cadastro -->
+        <img
+          src="assets/img/registerImage.svg"
+          alt="Uma imagem de uma moça segurando balões azuis" />
+      </div>
+      <div class="form">
+        <form action="#">
+          <!--TODO Tag do form, precisa por pelo BE -->
+          <div class="form-header">
+            <div class="title"><h1>Cadastre-se</h1></div>
+            <div class="login-button">
+              <button><a href="#">Entrar</a></button>
+              <!--TODO Link do login para logar-->
+            </div>
+          </div>
 
-	<footer>
-		<div class="main-content">
-			<div class="left box">
-				<h2> Sobre nós</h2>
-				<div class="content">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste facilis harum eos vel incidunt distinctio corrupti iure? Rem</p>
-				</div>
-			</div><!--left box-->
-			<div class="center box">
-				<h2>Endereço</h2>
-				<div class="content">
-					<div class="place">
-						<span class="fas fa-map-marker"></span>
-						<span class="text">Av. Carlos Consoni, 10 - Jardim Canada</span>
-						<span class="text">Ribeirão Preto - SP</span>
-					</div>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="firstname">Primeiro nome</label>
+              <input
+                id="firstname"
+                type="text"
+                name="firstname"
+                placeholder="Digite seu primeiro nome"
+                required />
+            </div>
+            <div class="input-box">
+              <label for="lastname">Sobrenome</label>
+              <input
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Digite seu sobrenome"
+                required />
+            </div>
 
-					<div class="phone">
-						<span class="fas fas fa-phone-alt"></span>
-						<span class="text">+55 16 99327-2184</span>
-					</div>
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu email"
+                required />
+            </div>
 
-					<div class="email">
-						<span class="fas fa-envelope"></span>
-						<span class="text">VSsecurity@gmail.com.br</span>
-					</div>
-				</div>
-			</div>
-			<div class="right box">
-				<h2>Contato</h2>
-				<div class="content">
-					<form action="#">
-						<div class="email">
-							<div class="text">Email *</div>
-							<input type="email" required>
-						</div>
-						<div class="msg">
-							<div class="text">Mensagem *</div>
-							<textarea rows="2" cols="25" required></textarea>
-						</div>
-						<div class="btn">
-							<button type="submit">Enviar</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div><!--main-content-->
-		<div class="bottom">
-			<div class="center">
-				<span class="credit">Criado por <a href="#">VSsecurity</a></span>
-				<span class="far fa-copyright">2022 Todos os diteitos reservados</span>
-			</div>
-		</div>
-	</footer>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
+            <div class="input-box">
+              <label for="date">Data de Nascimento</label>
+              <input id="date" type="date" name="date" required />
+            </div>
+
+            <div class="input-box">
+              <label for="password">Senha</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Digite sua senha"
+                required />
+            </div>
+
+            <div class="input-box">
+              <label for="confirmpassword">Confirme sua senha</label>
+              <input
+                id="confirmpassword"
+                type="password"
+                name="confirmpassword"
+                placeholder="Digite sua senha novamente"
+                required />
+            </div>
+          </div>
+
+          <div class="gender-inputs">
+            <div class="gender-title">
+              <h6>Gênero</h6>
+            </div>
+            <div class="gender-group">
+              <div class="gender-input">
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Feminino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Masculino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" name="gender" id="others" />
+                <label for="others">Prefiro não dizer</label>
+              </div>
+            </div>
+          </div>
+          <div class="continue-button">
+            <button><a href="#">Continuar</a></button>
+          </div>
+          <!--TODO adicionar o link para continuar-->
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
