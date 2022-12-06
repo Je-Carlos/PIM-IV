@@ -1,0 +1,97 @@
+﻿@{
+    Layout = null;
+}
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="~/css/style.css?Version=1" />
+        <link rel="stylesheet" h ef="~/css/login.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/login.css" />
+
+        <title>Login</title>
+    </head>
+    <header>
+        <div class="container-header">
+            <a href="#">
+                <img class="logo"
+                 src="~/css/VSsecurity.png"
+                 alt="Logo da VSsecurity azul e branco" />
+            </a>
+            <ul class="navbar">         
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Cotacao" asp-action="Index">Cotação</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Duvida" asp-action="Index">Dúvidas</a>
+            </ul>
+            <div class="main-header">
+                
+            </div>
+        </div>
+    </header>
+    <body>
+       
+        <div class="main-login">
+            <div class="left-login">
+                <h1>
+                    Faça login <br />
+                    E realize uma cotação conosco !
+                </h1>
+                <img class="left-login-image"
+                 src="~/css/tablet-login-animate.svg"
+                 alt="Duas pessoas dando a mão fechando um negócio" />
+            </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>Login</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text"
+                               name="usuario"
+                               id="usuario"
+                               placeholder="E-mail de login"
+                               required />
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password"
+                               name="senha"
+                               id="senha"
+                               placeholder="Senha de login"
+                               required />
+                    </div>
+                    <button class="button-login"><a href="#"></a>Login</button>
+                    <!-- Link para fazer o login -->
+                <button class="register-button"><a href="~/Cadastro">Registrar</a></button>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footer">
+            <div class="social">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Je-Carlos/PIM-IV"><img src="~/css/github.svg" alt="" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/NB4ZQVMgq6"><img src="~/css/discord.svg" alt="" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/gerarrdi"><img src="~/css/twitch.svg" alt="" /></a>
+            </div>
+            <ul class="list-footer">
+
+            <a style="color: lightgray" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+            <li><a href="~/Cotacao">Cotação</a></li>
+
+            <li><a href="~/Duvida">Dúvidas</a></li>
+
+        </ul>
+            <p class="copyright-footer">&copy; Copyright 2022 VS Security</p>
+        </div>
+    </footer>
+    </html>
+
+
+
+

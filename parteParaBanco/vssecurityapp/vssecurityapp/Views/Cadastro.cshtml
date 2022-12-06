@@ -1,0 +1,152 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Registrar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="~/css/style.css?Version=1" />
+    <link rel="stylesheet" href="~/css/cadastro.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="~/css/cadastro.css" />
+
+</head>
+<header>
+    <div class="container-header">
+        <a href="#">
+            <img class="logo"
+                 src="~/css/VSsecurity.png"
+                 alt="Logo da VSsecurity azul e branco" />
+        </a>
+        <ul class="navbar">
+            
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Cotacao" asp-action="Index">Cotação</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Duvida" asp-action="Index">Dúvidas</a>
+        </ul>
+        <div class="main-header">
+        </div>
+    </div>
+</header>
+<body>
+   
+    <div class="container1">
+        <div class="form-image">
+            <!--Imagem do menu de cadastro -->
+            <img src="~/css/registerImage.svg"
+                 alt="Uma imagem de uma moça segurando balões azuis" />
+        </div>
+        <div class="form">
+            <form action="#">
+                <!--TODO Tag do form, precisa por pelo BE -->
+                <div class="form-header">
+                    <div class="title"><h1>Cadastre-se</h1></div>
+                    <div class="login-button">
+                        <button><a href="~/Login">Entrar</a></button>
+                       
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro nome</label>
+                        <input id="firstname"
+                               type="text"
+                               name="firstname"
+                               placeholder="Digite seu primeiro nome"
+                               required />
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname"
+                               type="text"
+                               name="lastname"
+                               placeholder="Digite seu sobrenome"
+                               required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email"
+                               type="email"
+                               name="email"
+                               placeholder="Digite seu email"
+                               required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="date">Data de Nascimento</label>
+                        <input id="date" type="date" name="date" required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password"
+                               type="password"
+                               name="password"
+                               placeholder="Digite sua senha"
+                               required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmpassword">Confirme sua senha</label>
+                        <input id="confirmpassword"
+                               type="password"
+                               name="confirmpassword"
+                               placeholder="Digite sua senha novamente"
+                               required />
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="female" />
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="male" />
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="others" />
+                            <label for="others">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+                <!--TODO adicionar o link para continuar-->
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="social">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Je-Carlos/PIM-IV"><img src="~/css/github.svg" alt="" /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/NB4ZQVMgq6"><img src="~/css/discord.svg" alt="" /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/gerarrdi"><img src="~/css/twitch.svg" alt="" /></a>
+        </div>
+        <ul class="list-footer">
+
+            <a style="color: lightgray" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+            <li><a href="~/Cotacao">Cotação</a></li>
+
+            <li><a href="~/Duvida">Dúvidas</a></li>
+
+        </ul>
+        <p class="copyright-footer">&copy; Copyright 2022 VS Security</p>
+    </div>
+</footer>
+</html>
