@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  /*background: linear-gradient(90deg, #7bd2fd 60%,#009dec 40.1%);*/
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/duvida_seguro.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content:'';
+  height: 3px;
+  width: 0;
+  background: #00a9ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100px;
+
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1{
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.content p{
+    /*margin: 20px auto;*/
+    font-weight: 100;
+    /*line-height: 25px;*/
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #00a9ff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  background: #00a9ff;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+button:hover{
+  border: none;
+}
+
+/*Footer*/
+.footer{
+  padding: 25px 0;
+  background: #005580;
+  
+}
+.footer .social {
+  text-align: center;
+  padding: 25px;
+}
+.footer .social a{
+  font-size: 24px;
+  border: 1px solid #00000056;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.60;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.footer .social a:hover{
+  opacity: 1;
+}
+.footer ul {
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.footer ul li a{
+  color: #fff;
+  opacity: 0.80;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer ul li a:hover{
+  opacity: 1;
+}
+.footer .copyright-footer{
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding-top: 15px;
+  opacity: 0.80;
+  transition: all 0.5s ease;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+.main-header a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.main-header a::after {
+  content:'';
+  height: 3px;
+  width: 0;
+  background: #00a9ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+.user img {
+  font-size: 28px;
+  margin-right: 10px;
+}
